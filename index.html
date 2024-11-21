@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limpieza de Casas</title>
+    <style>
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .contenedor {
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        .menu {
+            background-color: #333;
+        }
+        .menu ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu ul li {
+            position: relative;
+        }
+        .menu ul li a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .menu ul li a:hover {
+            background-color: #575757;
+        }
+        .menu ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            list-style: none;
+            padding: 0;
+            min-width: 200px;
+            z-index: 1000;
+        }
+        .menu ul li ul li a {
+            padding: 10px 15px;
+            color: white;
+            text-decoration: none;
+        }
+        .menu ul li ul li a:hover {
+            background-color: #575757;
+        }
+        .menu ul li:hover ul {
+            display: block;
+        }
+        main, section {
+            padding: 20px;
+        }
+        main h2, section h2 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+        main p, section p {
+            margin-bottom: 15px;
+        }
+        main ul, section ul {
+            margin: 15px 0;
+            padding-left: 20px;
+            list-style: disc;
+        }
+        .servicio img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .portafolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .portafolio .equipo {
+            text-align: center;
+            padding: 10px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .portafolio .equipo img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .contacto {
+            margin-top: 20px;
+            padding: 20px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .contacto p {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        .contacto a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .contacto a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>Limpiezin</h1>
+            <p>Servicios no profesionales para tu hogar</p>
+        </header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li>
+                    <a href="#">Servicios</a>
+                    <ul>
+                        <li><a href="#limpieza-basica">Limpieza Básica</a></li>
+                        <li><a href="#limpieza-media">Limpieza Media</a></li>
+                        <li><a href="#limpieza-completa">Limpieza Completa</a></li>
+                    </ul>
+                </li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <main id="inicio">
+            <h2>Bienvenido a Limpiezin</h2>
+            <p>Ofrecemos servicios de limpieza profesional que se ajustan a tus necesidades.</p>
+            <div class="servicio">
+                <img src="img/limpio.webp" alt="Limpio">
+                <p>Confía en nosotros para mantener tu espacio limpio y organizado.</p>
+            </div>
+        </main>
+    <section id="limpieza-basica">
+        <h2>Limpieza Básica</h2>
+        <p>Incluye:</p>
+        <ul>
+            <li>Retiro de polvo</li>
+            <li>Barrido y trapeado</li>
+            <li>Sala y solo 1 habitacion</li>
+        </ul>
+    <hr>
+        <p>
+        Ejemplos de limpiezas antes hechas y proyectos visitando nuestro portafolio en el siguiente enlace:
+    </p>
+    <p>
+        <a href="https://esperanzajer.github.io/limbasic/" target="_blank">
+            Ver Portafolio
+        </a>
+    </p>
+    <hr>
+        <p><strong>Precio:</strong> $200 MXN</p>
+    </section>
+
+ <section id="limpieza-media">
+        <h2>Limpieza Media</h2>
+        <p>Incluye:</p>
+        <ul>
+            <li>Retiro de polvo</li>
+            <li>Barrido y trapeado</li>
+            <li>limpieza de ventanas</li>
+            <li>Aspirado (incluye equipo)</li>
+            <li>Sala y 2 habitaciones</li>
+        </ul>
+<hr>
+        <p>
+        Ejemplos de limpiezas antes hechas y proyectos visitando nuestro portafolio en el siguiente enlace:
+    </p>
+    <p>
+        <a href="https://esperanzajer.github.io/limbasic/" target="_blank">
+            Ver Portafolio
+        </a>
+    </p>
+    <hr>
+        <p><strong>Precio:</strong> $500 MXN</p>
+    </section>
+     <section id="limpieza-completa">
+        <h2>limpieza completa</h2>
+        <p>Incluye:</p>
+        <ul>
+            <li>Retiro de polvo</li>
+            <li>Barrido y trapeado</li>
+            <li>limpieza de ventanas</li>
+            <li>Aspirado (incluye equipo)</li>
+            <li>Sala, cocina y comedor y 2 habitaciones</li>
+        </ul>
+        <hr>
+        <p>
+        Ejemplos de limpiezas antes hechas y proyectos visitando nuestro portafolio en el siguiente enlace:
+    </p>
+    <p>
+        <a href="https://esperanzajer.github.io/limbasic/" target="_blank">
+            Ver Portafolio
+        </a>
+    </p>
+    <hr>
+        <p><strong>Precio:</strong> $800 MXN</p>
+    </section>
+
+        <section id="portafolio">
+            <h2>Portafolio</h2>
+            <p>
+                Conoce más sobre nuestro trabajo en el siguiente enlace:
+            </p>
+            <p>
+                <a href="https://esperanzajer.github.io/sustosquedangusto/" target="_blank">
+                    Ver Portafolio
+                </a>
+            </p>
+        </section>
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <p><strong>Teléfono:</strong> +52 924 141 1883</p>
+    </section>
+        <footer>
+            <p>© 2024 Limpieza de Casas. No nos llames si tienes dudas.</p>
+        </footer>
+    </div>
+</body>
+</html>
